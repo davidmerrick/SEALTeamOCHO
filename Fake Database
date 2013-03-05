@@ -1,3 +1,5 @@
+//Not sure if I'm doing this correct but this is the code for the three classes that will randomize lot data.
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
