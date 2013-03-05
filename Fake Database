@@ -1,0 +1,115 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace TAPS
+{
+    class Map
+    {
+        //5 is just an arbitrary lot count
+        int lotCount = 5;
+        Lot[] lotList = new Lot[5];
+        double[] lotVacancy = new double[5];
+
+        public void initializeMap()
+        {
+            int i;
+            for (i = 0; i < 5; ++i)
+            {
+                lotList[i] = new Lot();
+                lotList[i].lotID = i;
+                lotList[i].initializeLot();
+            }
+        }
+        public void updateMap()
+        {
+            int i;
+            for (i = 0; i < 5; ++i)
+            {
+                lotList[i].updateLot();
+                lotVacancy[i] = lotList[i].vacancyPercent;
+            }
+        }
+        public Lot[] getLots()
+        {
+            return lotList;
+        }
+        public double[] getLotVacancies()
+        {
+            return lotVacancy;
+        }
+    }
+
+    class Space
+    {
+        public bool vacant;
+        public bool handicap;
+        public bool motorcycle;
+        public bool faculty;
+        public int spaceID;
+    }
+
+    class Lot
+    {
+        //size is an arbitrary number of spaces in the lot
+        public int lotID;
+        int size = 38;
+        Space[] spaceList = new Space[38];
+        public double vacancyPercent;
+
+        public void initializeLot()
+        {
+            int i;
+            for (i = 0; i < size; ++i)
+            {
+                spaceList[i] = new Space();
+                spaceList[i].spaceID = i;
+                spaceList[i].vacant = true;
+            }
+            vacancyPercent = 100.0;
+        }
+
+        public void updateLot()
+        {
+            Random rand = new Random();
+            float r;
+            int numberVacant = 0;
+
+            int i;
+            for (i = 0; i < size; ++i)
+            {
+                //These random numbers are arbitrary
+                r = rand.Next();
+                r = r % 109;
+                
+                if ((r > 4.2) && (r < 75.9))
+                {
+                    
+                    if (spaceList[i].vacant == true)
+                    {
+                        spaceList[i].vacant = false;
+                    }
+                    else
+                    {
+                        spaceList[i].vacant = true;                      
+                    }
+                }
+            }
+
+            //The below write is to show each space's vacancy.
+            //Console.WriteLine("\nLot ID is " + (lotID + 1));
+
+            //updates vacancyPercent
+            for (i = 0; i < size; ++i)
+            {
+                Console.WriteLine("spot" + spaceList[i].spaceID + " is   " + spaceList[i].vacant);
+                if (spaceList[i].vacant == true)
+                {
+                    ++numberVacant;
+                }
+            }
+            vacancyPercent = 100.0 * ((double)numberVacant / (double)size);
+        }
+    } 
+}
