@@ -1,5 +1,3 @@
-//Not sure if I'm doing this correct but this is the code for the three classes that will randomize lot data.
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -100,7 +98,7 @@ namespace TAPS
             }
 
             //The below write is to show each space's vacancy.
-            //Console.WriteLine("\nLot ID is " + (lotID + 1));
+            Console.WriteLine("\nLot ID is " + (lotID + 1));
 
             //updates vacancyPercent
             for (i = 0; i < size; ++i)
