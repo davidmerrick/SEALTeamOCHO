@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,17 +82,17 @@ namespace TAPS
                 //These random numbers are arbitrary
                 r = rand.Next();
                 r = r % 109;
-                
+
                 if ((r > 4.2) && (r < 75.9))
                 {
-                    
+
                     if (spaceList[i].vacant == true)
                     {
                         spaceList[i].vacant = false;
                     }
                     else
                     {
-                        spaceList[i].vacant = true;                      
+                        spaceList[i].vacant = true;
                     }
                 }
             }
@@ -111,5 +111,26 @@ namespace TAPS
             }
             vacancyPercent = 100.0 * ((double)numberVacant / (double)size);
         }
-    } 
+    }
+    static void Main(string[] args)
+        {            
+            //The below is a test of the Maps class
+
+            Map taps = new Map();
+            taps.initializeMap();
+
+            double[] test = new double[5];
+
+            int i;
+
+            taps.updateMap();
+            test = taps.getLotVacancies();
+
+            for (i = 0; i < 5; ++i)
+            {
+                Console.Write(" \n Lot " + (i + 1) + "'s vacancy percentage is " + test[i].ToString() + "%");
+            }
+
+            Console.ReadLine();
+        }
 }

@@ -1,0 +1,10 @@
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\bin\Debug\DisplaySpike.exe
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\bin\Debug\DisplaySpike.pdb
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.Form1.resources
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.Properties.Resources.resources
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.csproj.GenerateResource.Cache
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.exe
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.pdb
+D:\Documents\School\J Term 2\CS361\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.csprojResolveAssemblyReference.cache
+C:\Users\Mark\ProjectLocal\SEALTeamOCHO\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.exe
+C:\Users\Mark\ProjectLocal\SEALTeamOCHO\DisplaySpike\DisplaySpike\obj\x86\Debug\DisplaySpike.pdb
