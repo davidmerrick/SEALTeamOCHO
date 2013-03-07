@@ -33,10 +33,10 @@
             this.LabelZoomHigh = new System.Windows.Forms.Label();
             this.PanelZoom = new System.Windows.Forms.Panel();
             this.PanelPan = new System.Windows.Forms.Panel();
-            this.ButtonWest = new System.Windows.Forms.Button();
-            this.ButtonEast = new System.Windows.Forms.Button();
-            this.ButtonNorth = new System.Windows.Forms.Button();
             this.ButtonSouth = new System.Windows.Forms.Button();
+            this.ButtonNorth = new System.Windows.Forms.Button();
+            this.ButtonEast = new System.Windows.Forms.Button();
+            this.ButtonWest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TrackBarZoom)).BeginInit();
             this.PanelZoom.SuspendLayout();
             this.PanelPan.SuspendLayout();
@@ -72,9 +72,9 @@
             this.PanelZoom.Controls.Add(this.LabelZoomHigh);
             this.PanelZoom.Controls.Add(this.LabelZoomLow);
             this.PanelZoom.Controls.Add(this.TrackBarZoom);
-            this.PanelZoom.Location = new System.Drawing.Point(20, 16);
+            this.PanelZoom.Location = new System.Drawing.Point(3, 3);
             this.PanelZoom.Name = "PanelZoom";
-            this.PanelZoom.Size = new System.Drawing.Size(265, 89);
+            this.PanelZoom.Size = new System.Drawing.Size(265, 83);
             this.PanelZoom.TabIndex = 3;
             // 
             // PanelPan
@@ -88,14 +88,23 @@
             this.PanelPan.Size = new System.Drawing.Size(184, 134);
             this.PanelPan.TabIndex = 4;
             // 
-            // ButtonWest
+            // ButtonSouth
             // 
-            this.ButtonWest.Location = new System.Drawing.Point(15, 55);
-            this.ButtonWest.Name = "ButtonWest";
-            this.ButtonWest.Size = new System.Drawing.Size(45, 34);
-            this.ButtonWest.TabIndex = 0;
-            this.ButtonWest.Text = "W";
-            this.ButtonWest.UseVisualStyleBackColor = true;
+            this.ButtonSouth.Location = new System.Drawing.Point(66, 97);
+            this.ButtonSouth.Name = "ButtonSouth";
+            this.ButtonSouth.Size = new System.Drawing.Size(45, 34);
+            this.ButtonSouth.TabIndex = 3;
+            this.ButtonSouth.Text = "S";
+            this.ButtonSouth.UseVisualStyleBackColor = true;
+            // 
+            // ButtonNorth
+            // 
+            this.ButtonNorth.Location = new System.Drawing.Point(66, 19);
+            this.ButtonNorth.Name = "ButtonNorth";
+            this.ButtonNorth.Size = new System.Drawing.Size(45, 34);
+            this.ButtonNorth.TabIndex = 2;
+            this.ButtonNorth.Text = "N";
+            this.ButtonNorth.UseVisualStyleBackColor = true;
             // 
             // ButtonEast
             // 
@@ -106,24 +115,14 @@
             this.ButtonEast.Text = "E";
             this.ButtonEast.UseVisualStyleBackColor = true;
             // 
-            // ButtonNorth
+            // ButtonWest
             // 
-            this.ButtonNorth.Location = new System.Drawing.Point(66, 19);
-            this.ButtonNorth.Name = "ButtonNorth";
-            this.ButtonNorth.Size = new System.Drawing.Size(45, 34);
-            this.ButtonNorth.TabIndex = 2;
-            this.ButtonNorth.Text = "N";
-            this.ButtonNorth.UseVisualStyleBackColor = true;
-            this.ButtonNorth.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // ButtonSouth
-            // 
-            this.ButtonSouth.Location = new System.Drawing.Point(66, 97);
-            this.ButtonSouth.Name = "ButtonSouth";
-            this.ButtonSouth.Size = new System.Drawing.Size(45, 34);
-            this.ButtonSouth.TabIndex = 3;
-            this.ButtonSouth.Text = "S";
-            this.ButtonSouth.UseVisualStyleBackColor = true;
+            this.ButtonWest.Location = new System.Drawing.Point(15, 55);
+            this.ButtonWest.Name = "ButtonWest";
+            this.ButtonWest.Size = new System.Drawing.Size(45, 34);
+            this.ButtonWest.TabIndex = 0;
+            this.ButtonWest.Text = "W";
+            this.ButtonWest.UseVisualStyleBackColor = true;
             // 
             // MapFrame
             // 

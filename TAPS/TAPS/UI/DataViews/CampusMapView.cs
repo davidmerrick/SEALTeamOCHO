@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+using System.IO;
 
 namespace TAPS
 {
@@ -18,6 +19,7 @@ namespace TAPS
     /// </remarks>
     class CampusMapView
     {
+        protected Map mMap;
 
         /// <summary>
         /// Creates a new CampusMapView and populates its fields with the most up-to-date data available.
@@ -30,7 +32,10 @@ namespace TAPS
         /// </remarks>
         public CampusMapView()
         {
-            throw new NotImplementedException();
+            //get the parking lot data from the XML file
+            this.mMap = Data.CampusMapParser.ParseCampusMap(new FileStream(
+                Properties.Settings.Default.ParkingDataFilePath, FileMode.Open));
+
         }
 
         /// <summary>
@@ -40,7 +45,7 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mMap.CampusImage;
             }
         }
 
@@ -52,7 +57,15 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                List<ParkingLotView> views = new List<ParkingLotView>();
+
+                //create a parking lot view for every lot
+                foreach (Lot curLot in this.mMap.Lots)
+                {
+                    views.Add(new ParkingLotView(curLot));
+                }
+
+                return views;
             }
         }
 
@@ -63,7 +76,8 @@ namespace TAPS
         /// </summary>
         public void UpdateMap()
         {
-            throw new NotImplementedException();
+            this.mMap = Data.CampusMapParser.ParseCampusMap(new FileStream(
+                Properties.Settings.Default.ParkingDataFilePath, FileMode.Open));
         }
 
         /// <summary>
@@ -72,7 +86,7 @@ namespace TAPS
         /// </summary>
         public void UpdateVacancies()
         {
-            throw new NotImplementedException();
+            this.mMap.UpdateVacancies();
         }
     }
 

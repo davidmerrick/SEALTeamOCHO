@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TAPS
 {
@@ -14,6 +15,9 @@ namespace TAPS
         public Form1()
         {
             InitializeComponent();
+
+            //get an image for the map frame
+            this.mapFrame1.MapImage = Image.FromFile("../../Data/ParkingData/CampusMap.bmp");
         }
     }
 }

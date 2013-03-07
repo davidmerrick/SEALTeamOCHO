@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Map>
+  <CampusImage>../../Data/ParkingData/CampusMap.bmp</CampusImage>
+  <Lot>
+    <Name>Kelly Engr</Name>
+    <Space flag="faculty" rect="0,0,150,150" id="1" />
+    <Space rect="10,10,20,20" id="2" />
+  </Lot>
+</Map>

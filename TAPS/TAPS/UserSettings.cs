@@ -8,6 +8,18 @@ namespace TAPS
     class UserSettings
     {
 
+        public static Space.SpaceType[] ParkingPermissions
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+
+            }
+        }
+
         public enum ColorblindSettings
         {
             None,

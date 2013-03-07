@@ -12,17 +12,21 @@ namespace TAPS
     /// </summary>
     class ParkingLotView
     {
+        protected Lot mParkingLot;
+
         /// <summary>
-        /// Creates a new ParkingLotView with the given lot name, lot region, number of total spaces, 
-        /// and number of available spaces.
+        /// Creates a new ParkingLotView with the given Lot object as the data source
         /// </summary>
         /// <param name="lotName"></param>
         /// <param name="lotRegion"></param>
         /// <param name="totalSpaces"></param>
         /// <param name="availableSpaces"></param>
-        public ParkingLotView(String lotName, Region lotRegion, int totalSpaces, int availableSpaces)
+        public ParkingLotView(Lot parkingLot)
         {
-            throw new NotImplementedException();
+            if (parkingLot == null)
+                throw new ArgumentNullException("dataSource", "'dataSource' cannot be null");
+
+            this.mParkingLot = parkingLot;
         }
 
         /// <summary>
@@ -32,7 +36,7 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mParkingLot.Name;
             }
         }
 
@@ -44,20 +48,20 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mParkingLot.LotRegion;
             }
         }
 
         /// <summary>
         /// The total number of spaces in the parking lot. Only spaces which the user can
-        /// park in given their UserParkingPermissions and UserParkingRestrictions are considered
+        /// park in given their UserParkingPermissions are considered
         /// in this total.
         /// </summary>
         public int TotalSpaces
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mParkingLot.GetTotalCount(UserSettings.ParkingPermissions);
             }
         }
 
@@ -70,7 +74,7 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return this.mParkingLot.GetVacantCount(UserSettings.ParkingPermissions);
             }
         }
 
@@ -81,38 +85,17 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return (float)this.AvailableSpaces / (float)this.TotalSpaces;
             }
         }
 
         /// <summary>
         /// Updates the AvailableSpaces and TotalSpaces properties of the ParkingLotView.
         /// </summary>
-        /// <param name="availableSpaces">The new number of available spaces</param>
-        /// <param name="totalSpaces">The new number of total spaces</param>
-        /// <remarks>
-        /// The caller should calculate the values for "availableSpaces" and "totalSpaces" 
-        /// according to the definitions of these fields (as given in the documentation for the
-        /// AvailableSpaces and TotalSpaces properties.</remarks>
-        public void UpdateAvailableSpaces(int availableSpaces, int totalSpaces)
+        public void UpdateAvailableSpaces()
         {
-            throw new NotImplementedException();
+            this.mParkingLot.UpdateLot();
         }
 
-        /// <summary>
-        /// Updates the LotName, LotRegion, AvailableSpaces, and TotalSpaces properties of the 
-        /// ParkingLotView.
-        /// </summary>
-        /// <param name="lotName">the new lot name (null for no update)</param>
-        /// <param name="lotRegion">the new lot region (null for no update)</param>
-        /// <param name="availableSpaces">the new number of available spaces (null for no update)</param>
-        /// <param name="totalSpaces">the new number of total spaces (null for no update)</param>
-        /// <remarks>
-        /// Any argument that is left null will result in no change to the corresponding field of the
-        /// ParkingLotView object.</remarks>
-        public void UpdateLot(String? lotName, Region lotRegion, int? availableSpaces, int? totalSpaces)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
