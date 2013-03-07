@@ -7,7 +7,7 @@ using System.Drawing;
 namespace TAPS
 {
 
-    class Map
+    public class Map
     {
         //5 is just an arbitrary lot count
         protected Image mCampusImage;
@@ -48,7 +48,7 @@ namespace TAPS
         }
     }
 
-    class Space
+    public class Space
     {
         public bool vacant;
         public bool handicap;
@@ -76,6 +76,22 @@ namespace TAPS
             this.rect = rect;
         }
 
+        public Boolean CanUserPark(SpaceType[] userPermissions)
+        {
+            //user must have at least one of the restrictions associated with the space
+            //in their permissions list
+            if (this.faculty && userPermissions.Contains(SpaceType.faculty))
+                return true;
+            else if (this.handicap && userPermissions.Contains(SpaceType.handicap))
+                return true;
+            else if (!this.handicap && !this.faculty)
+                return true;
+            else
+                return false;
+
+            
+        }
+
         public enum SpaceType
         {
             regular,
@@ -85,7 +101,7 @@ namespace TAPS
         }
     }
 
-    class Lot
+    public class Lot
     {
         //size is an arbitrary number of spaces in the lot
         protected String mLotName;

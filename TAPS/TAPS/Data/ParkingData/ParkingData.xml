@@ -3,7 +3,37 @@
   <CampusImage>../../Data/ParkingData/CampusMap.bmp</CampusImage>
   <Lot>
     <Name>Kelly Engr</Name>
-    <Space flag="faculty" rect="0,0,150,150" id="1" />
-    <Space rect="10,10,20,20" id="2" />
+    <Image>../../Data/ParkingData/ParkingLot1.bmp</Image>
+    <Region>
+      <pt>100,100</pt>
+      <pt>200,100</pt>
+      <pt>200,200</pt>
+      <pt>100,200</pt>
+    </Region>
+    <Space rect="0,0,125,200" id="1" flag="faculty" />
+    <Space rect="125,0,125,200" id="2" flag="faculty"/>
+    <Space rect="250,0,125,200" id="3" />
+    <Space rect="375,0,125,200" id="4" />
+    <Space rect="500,0,125,200" id="5" />
+    <Space rect="625,0,125,200" id="6" />
+    <Space rect="750,0,125,200" id="7" />
+    <Space rect="875,0,125,200" id="8" />
+    <Space rect="1000,0,125,200" id="9" />
+    <Space rect="1125,0,125,200" id="10" />
+    <Space rect="1250,0,125,200" id="11" flag="handicap" />
+    <Space rect="1375,0,125,200" id="12" flag="handicap" />
+  </Lot>
+
+  <Lot>
+    <Name>New lot</Name>
+    <Image>../../Data/ParkingData/CampusMap.bmp</Image>
+    <Region>
+      <pt>300,100</pt>
+      <pt>300,150</pt>
+      <pt>350,150</pt>
+      <pt>350,100</pt>
+    </Region>
+    <Space rect="0,0,150,150" id="3" />
+    <Space rect="0,0,150,150" id="4" />
   </Lot>
 </Map>

@@ -7,3 +7,4 @@ C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Debug\TAPS.exe
 C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Debug\TAPS.pdb
 C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Debug\TAPS.Form1.resources
 C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Debug\TAPS.exe.config
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Debug\TAPS.UI.ParkingLotDisplay.resources

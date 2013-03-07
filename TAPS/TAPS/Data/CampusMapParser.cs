@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace TAPS.Data
 {
@@ -44,6 +45,7 @@ namespace TAPS.Data
             Lot newLot = new Lot();
             Boolean foundName = false;
             Boolean foundImage = false;
+            Boolean foundRegion = false;
 
             newLot.Spaces.Clear();
 
@@ -68,6 +70,11 @@ namespace TAPS.Data
 
                     foundImage = true;
                 }
+                else if (child.Name.ToUpper() == "REGION")
+                {
+                    newLot.LotRegion = ParseRegion(child);
+                    foundRegion = true;
+                }
                 else if (child.Name.ToUpper() == "SPACE")
                 {
                     newLot.Spaces.Add(ParseParkingSpace(child));
@@ -77,7 +84,7 @@ namespace TAPS.Data
             }
 
             //make sure that the parking lot name and image were parsed
-            if (!foundImage || !foundName)
+            if (!foundImage || !foundName || !foundRegion)
                 throw new InvalidDataException("The Lot XML node is missing one or more required child nodes");
 
             return newLot;
@@ -151,6 +158,34 @@ namespace TAPS.Data
             parsedRect.Height = parsedValue;
 
             return parsedRect;
+        }
+
+        protected static Region ParseRegion(XmlNode regionNode)
+        {
+            XmlNodeList pointNodes = regionNode.ChildNodes;
+            int x,y;
+            Region newRegion;
+            GraphicsPath path = new GraphicsPath();
+            List<Point> points = new List<Point>();
+
+            foreach (XmlNode pt in pointNodes)
+            {
+                if (pt.Name.ToUpper() != "PT")
+                    throw new InvalidDataException("Region node must contain only 'pt' nodes");
+
+                //parse into a point
+                String[] xy = pt.InnerText.Split(new char[] { ',' });
+                if(xy.Length != 2)
+                    throw new InvalidDataException("Could not parse 'pt' node");
+                if (int.TryParse(xy[0], out x) == false || int.TryParse(xy[1], out y) == false)
+                    throw new InvalidDataException("Could not parse 'pt' node");
+
+                points.Add(new Point(x, y));
+            }
+
+            path.AddPolygon(points.ToArray());
+            newRegion = new Region(path);
+            return newRegion;
         }
     }
 }

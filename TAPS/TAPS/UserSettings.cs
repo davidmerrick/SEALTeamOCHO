@@ -12,7 +12,7 @@ namespace TAPS
         {
             get
             {
-                throw new NotImplementedException();
+                return new Space.SpaceType[] { Space.SpaceType.regular };
             }
             set
             {

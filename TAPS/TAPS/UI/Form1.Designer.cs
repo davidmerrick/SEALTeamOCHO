@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mapFrame1 = new TAPS.UI.MapFrame();
+            this.CampusMapFrame = new TAPS.UI.CampusMapFrame();
             this.SuspendLayout();
             // 
-            // mapFrame1
+            // CampusMapFrame
             // 
-            this.mapFrame1.Location = new System.Drawing.Point(17, 15);
-            this.mapFrame1.Name = "mapFrame1";
-            this.mapFrame1.Size = new System.Drawing.Size(821, 489);
-            this.mapFrame1.TabIndex = 0;
+            this.CampusMapFrame.Location = new System.Drawing.Point(12, 15);
+            this.CampusMapFrame.MapImage = null;
+            this.CampusMapFrame.Name = "CampusMapFrame";
+            this.CampusMapFrame.Size = new System.Drawing.Size(821, 489);
+            this.CampusMapFrame.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 516);
-            this.Controls.Add(this.mapFrame1);
+            this.Controls.Add(this.CampusMapFrame);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -52,7 +53,9 @@
 
         #endregion
 
-        private UI.MapFrame mapFrame1;
+        private UI.CampusMapFrame CampusMapFrame;
+
+
     }
 }
 

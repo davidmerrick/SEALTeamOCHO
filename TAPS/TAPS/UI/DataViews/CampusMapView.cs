@@ -17,7 +17,7 @@ namespace TAPS
     /// should be obtained using the CampusMapView or ParkingLotView classes, and not the underlying data layer
     /// classes.
     /// </remarks>
-    class CampusMapView
+    public class CampusMapView
     {
         protected Map mMap;
 

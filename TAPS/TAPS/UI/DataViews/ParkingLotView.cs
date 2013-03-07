@@ -10,7 +10,7 @@ namespace TAPS
     /// This class provides all the data necessary to display an overview of a parking lot on the campus map. 
     /// This includes the lot name, region, and vacancy data. 
     /// </summary>
-    class ParkingLotView
+    public class ParkingLotView
     {
         protected Lot mParkingLot;
 
@@ -97,5 +97,35 @@ namespace TAPS
             this.mParkingLot.UpdateLot();
         }
 
+        public ParkingLotDetailView GetParkingLotDetailView()
+        {
+            return new ParkingLotDetailView(this.mParkingLot);
+        }
+
+    }
+
+    public class ParkingLotDetailView : ParkingLotView
+    {
+
+        public ParkingLotDetailView(Lot parkingLot) : base(parkingLot)
+        {
+
+        }
+
+        public Image LotImage
+        {
+            get
+            {
+                return base.mParkingLot.LotImage;
+            }
+        }
+
+        public IEnumerable<Space> Spaces
+        {
+            get
+            {
+                return base.mParkingLot.Spaces;
+            }
+        }
     }
 }

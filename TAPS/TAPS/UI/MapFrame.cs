@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -31,10 +32,6 @@ namespace TAPS.UI
             this.originalWindowSize = new Size(this.ClientSize.Width, this.ClientSize.Height);
             this.DoubleBuffered = true;
 
-            //set foreground controls to have transparent backgrounds
-            //this.TrackBarZoom.BackColor = Color.FromArgb(0, 0, 0, 0);
-            this.PanelPan.BackColor = Color.FromArgb(0, 0, 0, 0);
-            this.PanelZoom.BackColor = Color.FromArgb(0, 0, 0, 0);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -107,7 +104,16 @@ namespace TAPS.UI
             }
         }
 
-        
+        protected Matrix GetPageTransform()
+        {
+            Matrix transform = new Matrix();
+            transform.Reset();
+            transform.Translate((float)-this.myWindow.Xmin, (float)-this.myWindow.Ymin, System.Drawing.Drawing2D.MatrixOrder.Prepend);
+            transform.Scale((float)this.ClientSize.Width / (float)this.myWindow.Dimensions.Width,
+            (float)this.ClientSize.Height / (float)this.myWindow.Dimensions.Height, System.Drawing.Drawing2D.MatrixOrder.Prepend);
+
+            return transform;
+        }
     }
 
 
