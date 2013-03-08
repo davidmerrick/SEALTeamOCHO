@@ -29,24 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ParkingLotFrame = new TAPS.UI.ParkingLotFrame();
             this.LabelLotName = new System.Windows.Forms.Label();
             this.LabelFree = new System.Windows.Forms.Label();
             this.LabelVacantPercent = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ButtonReturnToMap = new System.Windows.Forms.Button();
             this.UpdateTimer = new System.Windows.Forms.Timer(this.components);
+            this.ParkingLotFrame = new TAPS.UI.ParkingLotFrame();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // ParkingLotFrame
-            // 
-            this.ParkingLotFrame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ParkingLotFrame.Location = new System.Drawing.Point(32, 242);
-            this.ParkingLotFrame.MapImage = null;
-            this.ParkingLotFrame.Name = "ParkingLotFrame";
-            this.ParkingLotFrame.ParkingLot = null;
-            this.ParkingLotFrame.Size = new System.Drawing.Size(1048, 489);
-            this.ParkingLotFrame.TabIndex = 0;
             // 
             // LabelLotName
             // 
@@ -103,11 +94,31 @@
             this.UpdateTimer.Interval = 10000;
             this.UpdateTimer.Tick += new System.EventHandler(this.UpdateTimer_Tick);
             // 
+            // ParkingLotFrame
+            // 
+            this.ParkingLotFrame.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ParkingLotFrame.Location = new System.Drawing.Point(32, 242);
+            this.ParkingLotFrame.MapImage = null;
+            this.ParkingLotFrame.Name = "ParkingLotFrame";
+            this.ParkingLotFrame.ParkingLot = null;
+            this.ParkingLotFrame.Size = new System.Drawing.Size(1048, 489);
+            this.ParkingLotFrame.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(576, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(443, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Note: Use the scroll bar to zoom the image and click-and-drag to pan";
+            // 
             // ParkingLotDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1115, 753);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonReturnToMap);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.LabelVacantPercent);
@@ -131,5 +142,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button ButtonReturnToMap;
         private System.Windows.Forms.Timer UpdateTimer;
+        private System.Windows.Forms.Label label1;
     }
 }

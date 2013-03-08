@@ -115,8 +115,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\ParkingData\CampusMap.bmp" />
-    <Content Include="Data\ParkingData\ParkingData.xml" />
+    <Content Include="Data\ParkingData\CampusMap.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ParkingData\ParkingData.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ParkingData\ParkingLot1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
