@@ -1,0 +1,1 @@
+c:\users\david merrick\documents\visual studio 2010\Projects\ConsoleApplication3\ConsoleApplication3\obj\x86\Debug\ResolveAssemblyReference.cache
