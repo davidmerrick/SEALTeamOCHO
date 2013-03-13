@@ -12,7 +12,7 @@ namespace TAPS
         {
             get
             {
-                return new Space.SpaceType[] { Space.SpaceType.regular };
+                return new Space.SpaceType[] { Space.SpaceType.regular};
             }
             set
             {

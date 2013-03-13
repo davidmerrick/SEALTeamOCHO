@@ -1,0 +1,13 @@
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\TAPS.exe.config
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\TAPS.exe
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\TAPS.pdb
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.Properties.Resources.resources
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.Form1.resources
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.UI.MapFrame.resources
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.UI.ParkingLotDisplay.resources
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.csproj.GenerateResource.Cache
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.exe
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\obj\x86\Release\TAPS.pdb
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\Data\ParkingData\CampusMap.bmp
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\Data\ParkingData\ParkingData.xml
+C:\Users\Mark\ProjectLocal2\SEALTeamOCHO\TAPS\TAPS\bin\Release\Data\ParkingData\ParkingLot1.bmp

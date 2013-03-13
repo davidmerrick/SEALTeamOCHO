@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ParkingDataFilePath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">../../Data/ParkingData/ParkingData.xml</Value>
+      <Value Profile="(Default)">Data/ParkingData/ParkingData.xml</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -25,7 +25,7 @@ namespace TAPS.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("../../Data/ParkingData/ParkingData.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data/ParkingData/ParkingData.xml")]
         public string ParkingDataFilePath {
             get {
                 return ((string)(this["ParkingDataFilePath"]));

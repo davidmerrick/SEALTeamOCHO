@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Map>
-  <CampusImage>../../Data/ParkingData/CampusMap.bmp</CampusImage>
+  <CampusImage>Data/ParkingData/CampusMap.bmp</CampusImage>
   <Lot>
     <Name>Kelly Engr</Name>
-    <Image>../../Data/ParkingData/ParkingLot1.bmp</Image>
+    <Image>Data/ParkingData/ParkingLot1.bmp</Image>
     <Region>
       <pt>100,100</pt>
       <pt>200,100</pt>
@@ -26,7 +26,7 @@
 
   <Lot>
     <Name>New lot</Name>
-    <Image>../../Data/ParkingData/CampusMap.bmp</Image>
+    <Image>Data/ParkingData/ParkingLot1.bmp</Image>
     <Region>
       <pt>300,100</pt>
       <pt>300,150</pt>
