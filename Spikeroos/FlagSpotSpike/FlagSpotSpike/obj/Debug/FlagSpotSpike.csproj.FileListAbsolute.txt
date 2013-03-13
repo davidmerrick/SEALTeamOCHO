@@ -1,0 +1,8 @@
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\bin\Debug\FlagSpotSpike.exe.config
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\bin\Debug\FlagSpotSpike.exe
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\bin\Debug\FlagSpotSpike.pdb
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\obj\Debug\FlagSpotSpike.Form1.resources
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\obj\Debug\FlagSpotSpike.Properties.Resources.resources
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\obj\Debug\FlagSpotSpike.csproj.GenerateResource.Cache
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\obj\Debug\FlagSpotSpike.exe
+C:\Users\AlexPC\Desktop\VS Projects\FlagSpotSpike\FlagSpotSpike\obj\Debug\FlagSpotSpike.pdb

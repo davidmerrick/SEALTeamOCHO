@@ -1,0 +1,12 @@
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\bin\Debug\FacultyAndStudentSpike.exe.config
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\bin\Debug\FacultyAndStudentSpike.exe
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\bin\Debug\FacultyAndStudentSpike.pdb
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.csprojResolveAssemblyReference.cache
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.frmLot.resources
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.Properties.Resources.resources
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.csproj.GenerateResource.Cache
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.exe
+C:\Users\AlexPC\Desktop\VS Projects\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.pdb
+C:\Users\AlexPC\Desktop\FacultyAndStudentSpike\FacultyAndStudentSpike\bin\Debug\FacultyAndStudentSpike.exe.config
+C:\Users\AlexPC\Desktop\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.exe
+C:\Users\AlexPC\Desktop\FacultyAndStudentSpike\FacultyAndStudentSpike\obj\Debug\FacultyAndStudentSpike.pdb
